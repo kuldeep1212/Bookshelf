@@ -1,0 +1,149 @@
+.wrapper
+{
+  background-color: #f0f5f5;
+  display: block;
+  max-width:760px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius:6px;
+  box-sizing: border-box;
+  box-shadow: 0 0 35px lightgrey;
+}
+.wrapper:hover
+{
+  box-shadow: 0 0 50px darkgrey;
+  transition-duration:0.5s;
+}
+.out
+{
+  width: 100%;
+  height: 100px;
+  max-height: 200px;
+}
+#outp
+{
+  width: inherit;
+  height: 100%;
+  font-size: 40px;
+}
+.console
+{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: "one two thr pls"
+                        "fr fv sx min"
+                        "svn egt nin into"
+                        "c zer eqt dvd";
+}
+
+#one
+{
+  grid-area: one;
+}
+#two
+{
+  grid-area: two;
+}
+#thr
+{
+  grid-area: thr;
+}
+#pls
+{
+  grid-area: pls;
+}
+#fr
+{
+  grid-area: fr;
+}
+#fv
+{
+  grid-area:fv;
+}
+#sx
+{
+  grid-area:sx;
+}
+#min
+{
+  grid-area: min;
+}
+#svn
+{
+  grid-area: svn;
+}
+#egt
+{
+  grid-area: egt;
+}
+#nin
+{
+  grid-area:nin;
+}
+#into
+{
+  grid-area: into;
+}
+#c
+{
+  grid-area:c;
+}
+#zer
+{
+  grid-area: zer;
+}
+#eqt
+{
+  grid-area: eqt;
+}
+#dvd
+{
+  grid-area:dvd;
+}
+button:hover
+{
+  background-color: darkgrey;
+}
+button::after
+{
+  border:none;
+  outline: none;
+}
+button
+{
+  width: 100%;
+  height: 80px;
+  border: 0;
+  outline: none;
+}
+@media screen and(max-width:480px) {
+  .wrapper
+  {
+    width: "device-width";
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .console
+  {
+    height: 100%;
+  }
+  .out
+  {
+    height: 50px;
+    width: 100%;
+  }
+    button
+    {
+      width: 100%;
+      height: 19vh;
+    }
+    #outp
+    {
+
+      font-size: 20px;
+    }
+
+}
